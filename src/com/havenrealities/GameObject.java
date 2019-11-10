@@ -3,5 +3,8 @@ package com.havenrealities;
 import java.awt.Graphics;
 
 public interface GameObject {
-	void Draw(int x, int y, Graphics g);
+	int x = 0;
+	int y = 0;
+	
+	void draw(Graphics g);
 }

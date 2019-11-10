@@ -3,7 +3,9 @@ package com.havenrealities;
 import javax.swing.JFrame;
 
 public class Game extends JFrame {
-	public Game() {
+	public static Game self;
+	
+	private Game() {
 		add(new Canvas());
 		
 		setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -18,6 +20,6 @@ public class Game extends JFrame {
 	}
 	
 	public static void main(String args[]) {
-		new Game();
+		self = new Game();
 	}
 }
